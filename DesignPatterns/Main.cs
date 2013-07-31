@@ -15,9 +15,22 @@ namespace DesignPatterns
 			AbstractFactory factory2 = new ConcreteFactory2();
 			Client client2 = new Client(factory2);
 			client2.Run();
-			
+
+			Document[] documents = new Document[2];
+			documents [0] = new Resume ();
+			documents [1] = new Report ();
+
+			foreach (Document document in documents) {
+				Console.WriteLine ("\n" + document.GetType ().Name + "--");
+				foreach(Page page in document.Pages){
+					Console.WriteLine (" " + page.GetType().Name);
+				}
+			}
+
 			// Wait for user input
 			Console.ReadKey();
+
+
 		}
 	}
 
