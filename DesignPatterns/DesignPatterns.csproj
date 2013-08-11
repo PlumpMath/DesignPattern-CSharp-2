@@ -38,6 +38,8 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="FactoryMethod.cs" />
     <Compile Include="Singleton.cs" />
+    <Compile Include="AbstractFactory.cs" />
+    <Compile Include="VocaloidTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
